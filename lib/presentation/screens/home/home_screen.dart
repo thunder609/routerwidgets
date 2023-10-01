@@ -6,7 +6,8 @@ import 'package:widgets_app/presentation/screens/cards/cards_screen.dart';
 import '../../../config/menu/menu_items.dart';
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+   static const String name ="home_screen";
+   const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -54,7 +55,8 @@ class _CustomListTitle extends StatelessWidget {
       subtitle: Text(menuItem.subTitle),
       onTap: () {
         //Navegar a otra Pantalla
-         context.push(menuItem.link);
+        context.pushNamed(CardsScreen.name);
+        // context.push(menuItem.link);
 
       },
         );
