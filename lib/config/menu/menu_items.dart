@@ -21,7 +21,7 @@ class MenuItems{
 const AppMenuItems=<MenuItems>[
    MenuItems(title: 'Botones',
        subTitle:'Varios Bototnes en el Fluter',
-       link: '/botones',
+       link: '/buttons',
        icon:Icons.smart_button_outlined),
   MenuItems(title: 'Tarjetas',
       subTitle:'Un Contenedor Estilizado',
