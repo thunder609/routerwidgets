@@ -55,8 +55,8 @@ class _CustomListTitle extends StatelessWidget {
       subtitle: Text(menuItem.subTitle),
       onTap: () {
         //Navegar a otra Pantalla
-        context.pushNamed(CardsScreen.name);
-        // context.push(menuItem.link);
+      //  context.pushNamed(CardsScreen.name);
+         context.push(menuItem.link);
 
       },
         );
