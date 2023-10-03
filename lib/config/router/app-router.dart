@@ -4,6 +4,7 @@ import 'package:widgets_app/presentation/screens/cards/cards_screen.dart';
 import 'package:widgets_app/presentation/screens/progress%20/progress_screen.dart';
 import 'package:widgets_app/presentation/screens/screen.dart';
 
+import '../../presentation/screens/animated/animated_screen.dart';
 import '../../presentation/screens/home/home_screen.dart';
 
 // GoRouter configuration
@@ -33,6 +34,11 @@ final appRouter = GoRouter(
       path: '/snackBar',
       name:SnackBarScreen.name,
       builder: (context, state) => SnackBarScreen(),
+    ),
+    GoRoute(
+      path: '/animated',
+      name:AnimaredScreen.name,
+      builder: (context, state) => AnimaredScreen(),
     ),
   ],
 );
