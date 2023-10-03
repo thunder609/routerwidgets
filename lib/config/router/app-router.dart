@@ -2,6 +2,7 @@ import 'package:go_router/go_router.dart';
 import 'package:widgets_app/presentation/screens/buttons/buttons_screen.dart';
 import 'package:widgets_app/presentation/screens/cards/cards_screen.dart';
 import 'package:widgets_app/presentation/screens/progress%20/progress_screen.dart';
+import 'package:widgets_app/presentation/screens/screen.dart';
 
 import '../../presentation/screens/home/home_screen.dart';
 
@@ -27,6 +28,11 @@ final appRouter = GoRouter(
       path: '/progress',
       name:ProgressScreen.name,
       builder: (context, state) => ProgressScreen(),
+    ),
+    GoRoute(
+      path: '/snackBar',
+      name:SnackBarScreen.name,
+      builder: (context, state) => SnackBarScreen(),
     ),
   ],
 );
