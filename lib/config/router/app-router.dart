@@ -40,5 +40,10 @@ final appRouter = GoRouter(
       name:AnimaredScreen.name,
       builder: (context, state) => AnimaredScreen(),
     ),
+    GoRoute(
+      path: '/iu-controls',
+      name:IuControlSceen.name,
+      builder: (context, state) => IuControlSceen(),
+    ),
   ],
 );
